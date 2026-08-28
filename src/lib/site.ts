@@ -92,7 +92,7 @@ export const processSteps = [
   {
     n: "03",
     title: "Kresba",
-    text: "Barevné skleněné nitě tvoří duhovku a drobné žilky. Tmavohnědá je nepřirozenější. Světlemodrá a šedozelená nesnesou jedinou chybu.",
+    text: "Barevné skleněné nitě tvoří duhovku a drobné žilky. Tmavohnědá je nejpřirozenější. Světlemodrá a šedozelená nesnesou jedinou chybu.",
   },
   {
     n: "04",
