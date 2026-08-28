@@ -1,5 +1,7 @@
 import { site } from "@/lib/site";
 
+const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+
 export function JsonLd() {
   const data = {
     "@context": "https://schema.org",
@@ -30,12 +32,20 @@ export function JsonLd() {
           latitude: site.address.lat,
           longitude: site.address.lng,
         },
-        openingHoursSpecification: {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: site.hours.opens,
-          closes: site.hours.closes,
-        },
+        openingHoursSpecification: [
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: weekdays,
+            opens: site.hours.opens,
+            closes: site.hours.morningCloses,
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: weekdays,
+            opens: site.hours.afternoonOpens,
+            closes: site.hours.closes,
+          },
+        ],
         areaServed: { "@type": "Country", name: "Česko" },
       },
       {

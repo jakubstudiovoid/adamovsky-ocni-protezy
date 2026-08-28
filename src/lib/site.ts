@@ -25,10 +25,12 @@ export const site = {
   },
   hours: {
     label: "Příjem objednávek",
-    detail: "Po–Pá od 10:00",
+    detail: "Po–Pá 8:00–12:00 a 13:00–15:30",
     note: "Pokud se nedovoláte, mám zrovna rozpracovanou protézu. Napište SMS — ozvu se.",
-    opens: "10:00",
+    opens: "08:00",
     closes: "15:30",
+    morningCloses: "12:00",
+    afternoonOpens: "13:00",
     days: "Po–Pá",
   },
   mapEmbed:
@@ -67,12 +69,13 @@ export const visitTypes = [
 ];
 
 export const timeSlots = [
+  "08:00",
+  "09:00",
   "10:00",
-  "10:45",
-  "11:30",
+  "11:00",
   "13:00",
-  "13:45",
-  "14:30",
+  "14:00",
+  "15:00",
 ] as const;
 
 export const processSteps = [
@@ -89,7 +92,7 @@ export const processSteps = [
   {
     n: "03",
     title: "Kresba",
-    text: "Barevné skleněné nitě tvoří duhovku a drobné žilky. Tmavohnědá je nejpřirozenější. Světlemodrá a šedozelená nesnesou jedinou chybu.",
+    text: "Barevné skleněné nitě tvoří duhovku a drobné žilky. Tmavohnědá je nepřirozenější. Světlemodrá a šedozelená nesnesou jedinou chybu.",
   },
   {
     n: "04",
