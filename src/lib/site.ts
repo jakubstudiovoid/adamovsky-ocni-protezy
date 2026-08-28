@@ -36,7 +36,7 @@ export const site = {
     days: "Po–Pá",
   },
   mapEmbed:
-    "https://www.openstreetmap.org/export/embed.html?bbox=15.1740%2C50.7245%2C15.1840%2C50.7305&layer=mapnik&marker=50.72754%2C15.17903",
+    "https://www.openstreetmap.org/export/embed.html?bbox=15.1740%2C50.7245%2C15.1840%2C50.7305&layer=mapnik",
   mapLink: "https://www.google.com/maps/dir/?api=1&destination=50.7275402,15.1790333",
 } as const;
 
