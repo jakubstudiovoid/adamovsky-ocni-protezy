@@ -20,7 +20,6 @@ export function ContactPreview() {
           <p className="mt-6 text-sm text-muted">
             {site.hours.workshopLabel}: {site.hours.workshop}
           </p>
-          <p className="mt-2 text-sm text-muted">{site.hours.note}</p>
           <ul className="mt-6 space-y-2 text-sm">
             <li>
               <a href={`tel:${site.phone}`} className="text-fg hover:text-iris">
@@ -33,6 +32,7 @@ export function ContactPreview() {
               </a>
             </li>
           </ul>
+          <p className="mt-3 text-sm text-muted">{site.hours.note}</p>
           <Button asChild size="lg" variant="iris" className="mt-8">
             <a href={site.mapLink} target="_blank" rel="noreferrer">
               Navigovat
