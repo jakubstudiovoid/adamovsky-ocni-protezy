@@ -25,7 +25,7 @@ function NavstevaPage() {
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-muted">
           Kalendář je poptávka, ne automatická rezervace. Petr termín potvrdí
-          telefonem nebo SMS — dílna je jednomužná a někdy právě fouká oko.
+          telefonem nebo SMS.
         </p>
       </header>
 
