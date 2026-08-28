@@ -3,8 +3,8 @@
 @theme {
   --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
 
-  --color-bg: #0b0b0c;
-  --color-surface: #121214;
+  --color-bg: #000000;
+  --color-surface: #000000;
   --color-paper: #f3f1ec;
   --color-fg: #f4f3ef;
   --color-ink: #141413;
