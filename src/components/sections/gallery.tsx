@@ -42,12 +42,12 @@ export function Gallery() {
         >
           {pieces.map((item) => (
             <RevealItem key={item.src}>
-              <figure className="flex flex-col items-center text-center">
+              <figure className="group flex flex-col items-center text-center">
                 <div className="aspect-square w-full overflow-hidden rounded-full">
                   <img
                     src={item.src}
                     alt={item.alt}
-                    className="size-full object-cover"
+                    className="size-full object-cover transition-transform duration-[1400ms] ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none group-hover:scale-[1.07]"
                     loading="lazy"
                   />
                 </div>
