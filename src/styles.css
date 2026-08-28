@@ -155,7 +155,7 @@
 }
 
 .studio-map-frame {
-  filter: grayscale(1) invert(1) contrast(1.05) brightness(0.72);
+  filter: grayscale(1) invert(1) contrast(0.92) brightness(0.88);
 }
 
 .rdp-adamovsky {
