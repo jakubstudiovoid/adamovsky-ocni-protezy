@@ -6,12 +6,15 @@ export function Process() {
     <section className="bg-bg text-fg">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
         <Reveal>
-          <h2 className="text-xs tracking-[0.22em] text-iris uppercase">
+          <p className="text-xs tracking-[0.22em] text-iris uppercase">
             Postup výroby
+          </p>
+          <h2 className="mt-4 max-w-xl text-3xl text-display sm:text-5xl">
+            Hodina nad kahanem.
           </h2>
         </Reveal>
 
-        <div className="mt-10 grid gap-10 lg:grid-cols-12 lg:items-start">
+        <div className="mt-14 grid gap-10 lg:grid-cols-12 lg:items-start">
           <Reveal className="overflow-hidden rounded-xl lg:col-span-5" delay={0.08}>
             <img
               src="/images/craft.jpg?v=20260828"
@@ -24,7 +27,7 @@ export function Process() {
             {processSteps.map((step) => (
               <RevealItem
                 key={step.n}
-                className="grid grid-cols-[auto_1fr] gap-5 border-t border-line pt-6"
+                className="grid grid-cols-[auto_1fr] gap-5 not-first:border-t not-first:border-line not-first:pt-6"
               >
                 <span className="font-medium tabular-nums text-iris">{step.n}</span>
                 <div>
