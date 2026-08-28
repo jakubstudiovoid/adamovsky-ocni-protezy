@@ -39,6 +39,11 @@ const detailsSchema = z.object({
 
 type Step = "type" | "date" | "time" | "details" | "done";
 
+const slotGroups = [
+  { label: "Ráno", slots: timeSlots.filter((slot) => slot < "12:00") },
+  { label: "Odpoledne", slots: timeSlots.filter((slot) => slot >= "13:00") },
+] as const;
+
 export function ReservationForm() {
   const [step, setStep] = useState<Step>("type");
   const [visitType, setVisitType] = useState<VisitTypeId | null>(null);
@@ -262,27 +267,36 @@ export function ReservationForm() {
           <p className="mt-2 text-sm text-muted">
             {format(date, "EEEE d. MMMM yyyy", { locale: cs })}
           </p>
-          <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
-            {timeSlots.map((slot) => {
-              const busy = taken.includes(slot);
-              return (
-                <button
-                  key={slot}
-                  type="button"
-                  disabled={busy}
-                  onClick={() => {
-                    setTime(slot);
-                    setStep("details");
-                  }}
-                  className={cn(
-                    "h-12 rounded-lg border border-line text-sm tabular-nums transition-[border-color,background-color] duration-150 hover:border-iris/60 disabled:cursor-not-allowed disabled:opacity-35",
-                    time === slot && "border-iris bg-iris/10",
-                  )}
-                >
-                  {busy ? `${slot} · obsazeno` : slot}
-                </button>
-              );
-            })}
+          <div className="mt-6 space-y-6">
+            {slotGroups.map((group) => (
+              <div key={group.label}>
+                <p className="text-xs tracking-[0.16em] text-muted uppercase">
+                  {group.label}
+                </p>
+                <div className="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                  {group.slots.map((slot) => {
+                    const busy = taken.includes(slot);
+                    return (
+                      <button
+                        key={slot}
+                        type="button"
+                        disabled={busy}
+                        onClick={() => {
+                          setTime(slot);
+                          setStep("details");
+                        }}
+                        className={cn(
+                          "h-12 rounded-lg border border-line text-sm tabular-nums transition-[border-color,background-color] duration-150 hover:border-iris/60 disabled:cursor-not-allowed disabled:opacity-35",
+                          time === slot && "border-iris bg-iris/10",
+                        )}
+                      >
+                        {busy ? `${slot} · obsazeno` : slot}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       ) : null}
