@@ -43,21 +43,8 @@ export function Gallery() {
           {pieces.map((item) => (
             <RevealItem key={item.src}>
               <figure className="flex flex-col items-center text-center">
-                <div className="group relative aspect-square w-full overflow-hidden rounded-full [clip-path:circle(50%)]">
-                  <img
-                    src={item.src}
-                    alt={item.alt}
-                    className="size-full origin-center object-cover scale-[1.16] transition-[transform,filter] duration-[2800ms] ease-[cubic-bezier(0.4,0,0.6,1)] group-hover:scale-[1.22] group-hover:brightness-[1.05] motion-reduce:scale-100 motion-reduce:transition-none"
-                    loading="lazy"
-                  />
-                  <span
-                    aria-hidden
-                    className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-[2800ms] ease-[cubic-bezier(0.4,0,0.6,1)] group-hover:opacity-100 motion-reduce:hidden"
-                    style={{
-                      background:
-                        "radial-gradient(circle at 32% 28%, rgba(244,243,239,0.18), transparent 46%)",
-                    }}
-                  />
+                <div className="iris-disc aspect-square w-full">
+                  <img src={item.src} alt={item.alt} loading="lazy" />
                 </div>
                 <figcaption className="mt-4 sm:mt-5">
                   <p className="text-xs tracking-[0.22em] uppercase">{item.caption}</p>
