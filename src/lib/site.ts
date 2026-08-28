@@ -25,7 +25,9 @@ export const site = {
   },
   hours: {
     label: "Příjem objednávek",
-    detail: "Po–Pá 8:00–12:00 a 13:00–15:30",
+    detail: "od pondělí do pátku od 10:00",
+    workshopLabel: "Provoz dílny",
+    workshop: "pondělí–pátek 8:00–12:00 a 13:00–15:30",
     note: "Pokud se nedovoláte, mám zrovna rozpracovanou protézu. Napište SMS — ozvu se.",
     opens: "08:00",
     closes: "15:30",
