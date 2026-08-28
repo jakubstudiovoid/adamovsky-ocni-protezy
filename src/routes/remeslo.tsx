@@ -140,32 +140,34 @@ function RemesloPage() {
         </Reveal>
 
         <Reveal>
-          <p className="mt-16 text-xs tracking-[0.22em] text-iris uppercase">
-            Napsali o nás
-          </p>
-          <ul className="mt-8 divide-y divide-line border-y border-line">
-            {press.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group flex items-baseline justify-between gap-6 py-5"
-                >
-                  <span>
-                    <span className="block text-xs tracking-[0.16em] text-muted uppercase">
-                      {item.source}
-                      {item.year ? ` · ${item.year}` : ""}
+          <section id="napsali" className="scroll-mt-28">
+            <p className="mt-16 text-xs tracking-[0.22em] text-iris uppercase">
+              Napsali o nás
+            </p>
+            <ul className="mt-8 divide-y divide-line border-y border-line">
+              {press.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group flex items-baseline justify-between gap-6 py-5"
+                  >
+                    <span>
+                      <span className="block text-xs tracking-[0.16em] text-muted uppercase">
+                        {item.source}
+                        {item.year ? ` · ${item.year}` : ""}
+                      </span>
+                      <span className="mt-2 block tracking-tight transition-colors group-hover:text-iris">
+                        {item.title}
+                      </span>
                     </span>
-                    <span className="mt-2 block tracking-tight transition-colors group-hover:text-iris">
-                      {item.title}
-                    </span>
-                  </span>
-                  <ArrowUpRight className="size-4 shrink-0 text-muted transition-colors group-hover:text-iris" />
-                </a>
-              </li>
-            ))}
-          </ul>
+                    <ArrowUpRight className="size-4 shrink-0 text-muted transition-colors group-hover:text-iris" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
         </Reveal>
 
         <Reveal>
