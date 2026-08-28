@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { z } from "zod";
 import { Reveal } from "@/components/reveal";
+import { StudioMap } from "@/components/studio-map";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -204,13 +205,7 @@ function KontaktPage() {
       </div>
 
       <div className="mx-auto max-w-6xl px-5 pb-20 sm:px-8">
-        <iframe
-          title="Mapa dílny Petra Adamovského"
-          src={site.mapEmbed}
-          className="h-80 w-full rounded-xl border-0 grayscale contrast-125 lg:h-[28rem]"
-          loading="lazy"
-          referrerPolicy="no-referrer"
-        />
+        <StudioMap title="Mapa dílny Petra Adamovského" />
         <p className="mt-4 text-sm">
           <a
             href={site.mapLink}
