@@ -9,7 +9,7 @@ export const Route = createFileRoute("/navsteva")({
     pageHead({
       title: "Rezervace návštěvy",
       description:
-        "Objednejte se k Petrovi Adamovskému na výrobu skleněné oční protézy v Jablonci nad Nisou. Po–Pá 8:00–12:00 a 13:00–15:30. Na počkání, zhruba hodina.",
+        "Objednejte se k Petrovi Adamovskému na výrobu skleněné oční protézy v Jablonci nad Nisou. Příjem objednávek od pondělí do pátku od 10:00. Na počkání, zhruba hodina.",
       path: "/navsteva",
     }),
   component: NavstevaPage,
@@ -44,7 +44,7 @@ function NavstevaPage() {
             </ul>
             <h2 className="mt-8 text-xl tracking-tight">Kdy</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              {site.hours.label}: {site.hours.detail}. {site.hours.note}
+              {site.hours.label} {site.hours.detail}. {site.hours.note}
             </p>
             <h2 className="mt-8 text-xl tracking-tight">Poštou</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
