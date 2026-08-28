@@ -42,20 +42,33 @@ export function Gallery() {
         >
           {pieces.map((item) => (
             <RevealItem key={item.src}>
-              <figure className="group flex flex-col items-center text-center">
-                <div className="relative aspect-square w-full overflow-hidden rounded-full">
+              <figure className="flex flex-col items-center text-center">
+                <div className="group relative aspect-square w-full overflow-hidden rounded-full [clip-path:circle(50%)]">
                   <img
                     src={item.src}
                     alt={item.alt}
-                    className="size-full object-cover transition-[transform,filter] duration-[2800ms] ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none group-hover:scale-[1.03] group-hover:brightness-[1.06]"
+                    className="size-full origin-center object-cover motion-reduce:scale-100 motion-reduce:transition-none"
+                    style={{
+                      transform: "scale(1.16)",
+                      transition:
+                        "transform 2.8s cubic-bezier(0.4, 0, 0.6, 1), filter 2.8s cubic-bezier(0.4, 0, 0.6, 1)",
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = "scale(1.22)";
+                      e.currentTarget.style.filter = "brightness(1.05)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "scale(1.16)";
+                      e.currentTarget.style.filter = "brightness(1)";
+                    }}
                     loading="lazy"
                   />
                   <span
                     aria-hidden
-                    className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-[2800ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:opacity-100 motion-reduce:hidden"
+                    className="pointer-events-none absolute inset-0 rounded-full opacity-0 transition-opacity duration-[2800ms] ease-in-out group-hover:opacity-100 motion-reduce:hidden"
                     style={{
                       background:
-                        "radial-gradient(circle at 32% 28%, rgba(244,243,239,0.2), transparent 46%)",
+                        "radial-gradient(circle at 32% 28%, rgba(244,243,239,0.18), transparent 46%)",
                     }}
                   />
                 </div>
