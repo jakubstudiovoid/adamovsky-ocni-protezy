@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/reveal";
+import { StudioMap } from "@/components/studio-map";
 import { Button } from "@/components/ui/button";
 import { site } from "@/lib/site";
 
@@ -38,14 +39,8 @@ export function ContactPreview() {
             </a>
           </Button>
         </Reveal>
-        <Reveal className="overflow-hidden rounded-xl lg:col-span-8" delay={0.1}>
-          <iframe
-            title="Mapa dílny Petra Adamovského v Jablonci nad Nisou"
-            src={site.mapEmbed}
-            className="h-80 w-full border-0 grayscale contrast-125 lg:h-[28rem]"
-            loading="lazy"
-            referrerPolicy="no-referrer"
-          />
+        <Reveal className="lg:col-span-8" delay={0.1}>
+          <StudioMap />
         </Reveal>
       </div>
     </section>
