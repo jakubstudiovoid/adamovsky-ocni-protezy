@@ -1,7 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
-import { Button } from "@/components/ui/button";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/remeslo")({
@@ -168,12 +167,6 @@ function RemesloPage() {
               ))}
             </ul>
           </section>
-        </Reveal>
-
-        <Reveal>
-          <Button asChild variant="iris" className="mt-4">
-            <Link to="/navsteva">Objednat návštěvu</Link>
-          </Button>
         </Reveal>
       </div>
     </article>
