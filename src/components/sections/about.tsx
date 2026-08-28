@@ -39,9 +39,16 @@ export function About() {
             </p>
           </Reveal>
           <Reveal delay={0.22}>
-            <Button asChild variant="ink" className="mt-8">
-              <Link to="/remeslo">Celý příběh</Link>
-            </Button>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button asChild variant="ink">
+                <Link to="/remeslo">Celý příběh</Link>
+              </Button>
+              <Button asChild variant="ink-outline">
+                <Link to="/remeslo" hash="napsali">
+                  Napsali o nás
+                </Link>
+              </Button>
+            </div>
           </Reveal>
         </div>
       </div>
