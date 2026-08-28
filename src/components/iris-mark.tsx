@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 export function IrisMark({
   className,
-  title = "Adamovský",
+  title = "Oční protézy Petr Adamovský",
 }: {
   className?: string;
   title?: string;

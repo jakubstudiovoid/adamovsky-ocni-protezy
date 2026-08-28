@@ -6,7 +6,7 @@ export function pageHead(opts: {
   path?: string;
   noIndex?: boolean;
 }) {
-  const title = opts.title ? `${opts.title} — ${site.shortName}` : site.title;
+  const title = opts.title ? `${opts.title} — ${site.name}` : site.title;
   const description = opts.description ?? site.description;
   const canonical = `${site.url}${opts.path ?? "/"}`;
 
@@ -14,7 +14,7 @@ export function pageHead(opts: {
     meta: [
       { title },
       { name: "description", content: description },
-      { name: "author", content: site.name },
+      { name: "author", content: site.person },
       {
         name: "robots",
         content: opts.noIndex

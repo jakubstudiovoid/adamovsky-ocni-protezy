@@ -8,9 +8,10 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-12 lg:py-20">
         <div className="lg:col-span-5">
           <div className="flex items-center gap-2.5">
-            <IrisMark className="size-7 text-fg" />
-            <span className="text-sm font-medium tracking-[0.22em] uppercase">
-              {site.shortName}
+            <IrisMark className="size-7 text-fg" title={site.name} />
+            <span className="flex flex-col leading-none">
+              <span className="text-sm font-medium tracking-tight">{site.shortName}</span>
+              <span className="mt-0.5 text-[11px] text-muted">{site.person}</span>
             </span>
           </div>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted">
@@ -25,6 +26,8 @@ export function Footer() {
               Ateliér
             </p>
             <address className="mt-4 not-italic text-sm leading-relaxed text-fg">
+              {site.person}
+              <br />
               {site.address.line1}
               <br />
               {site.address.zip} {site.address.city}
@@ -86,8 +89,8 @@ export function Footer() {
       </div>
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <p>© {new Date().getFullYear()} Petr Adamovský. Všechna práva vyhrazena.</p>
-          <p>Skleněné oční protézy · Jablonec nad Nisou</p>
+          <p>© {new Date().getFullYear()} {site.name}. Všechna práva vyhrazena.</p>
+          <p>Jablonec nad Nisou</p>
         </div>
       </div>
     </footer>

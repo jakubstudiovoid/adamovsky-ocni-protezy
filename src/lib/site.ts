@@ -1,10 +1,11 @@
 export const site = {
-  name: "Petr Adamovský",
-  shortName: "Adamovský",
+  name: "Oční protézy Petr Adamovský",
+  shortName: "Oční protézy",
+  person: "Petr Adamovský",
   tagline: "Skleněné oční protézy",
-  title: "Petr Adamovský — Skleněné oční protézy | Jablonec nad Nisou",
+  title: "Oční protézy Petr Adamovský | Jablonec nad Nisou",
   description:
-    "Petr Adamovský vyrábí skleněné oční protézy v Jablonci nad Nisou. Ručně, nad kahanem, na počkání. Jedno z posledních míst v Česku, kde se toto řemeslo ještě drží.",
+    "Oční protézy Petr Adamovský — výroba skleněných očních protéz v Jablonci nad Nisou. Ručně, nad kahanem, na počkání. Jedno z posledních míst v Česku, kde se toto řemeslo ještě drží.",
   url: "https://www.ocniprotezy-sklo.cz",
   locale: "cs_CZ",
   email: "oko@ocniprotezy-sklo.cz",

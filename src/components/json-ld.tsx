@@ -7,8 +7,8 @@ export function JsonLd() {
       {
         "@type": "MedicalBusiness",
         "@id": `${site.url}/#studio`,
-        name: "Petr Adamovský — Výroba očních protéz",
-        alternateName: "Oční protézy sklo",
+        name: site.name,
+        alternateName: ["Oční protézy sklo", site.person],
         description: site.description,
         url: site.url,
         image: `${site.url}/og.jpg`,
@@ -41,7 +41,7 @@ export function JsonLd() {
       {
         "@type": "Person",
         "@id": `${site.url}/#petr`,
-        name: "Petr Adamovský",
+        name: site.person,
         jobTitle: "Výrobce skleněných očních protéz",
         worksFor: { "@id": `${site.url}/#studio` },
         address: {

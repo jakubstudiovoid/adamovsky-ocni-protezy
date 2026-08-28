@@ -44,13 +44,13 @@ export function Header() {
           className="flex items-center gap-2.5 text-fg no-underline"
           aria-label={`${site.name} — úvod`}
         >
-          <IrisMark className="size-7 text-fg" />
+          <IrisMark className="size-7 text-fg" title={site.name} />
           <span className="flex flex-col leading-none">
-            <span className="text-sm font-medium tracking-[0.22em] uppercase">
+            <span className="text-sm font-medium tracking-tight">
               {site.shortName}
             </span>
-            <span className="mt-0.5 text-[10px] tracking-[0.18em] text-muted uppercase">
-              Jablonec
+            <span className="mt-0.5 text-[11px] tracking-tight text-muted">
+              {site.person}
             </span>
           </span>
         </Link>
