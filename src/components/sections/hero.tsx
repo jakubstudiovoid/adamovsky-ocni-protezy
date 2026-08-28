@@ -10,7 +10,7 @@ export function Hero() {
   return (
     <section className="relative isolate flex min-h-dvh items-end overflow-hidden">
       <img
-        src="/images/hero-atelier.jpg"
+        src="/images/hero-atelier.webp"
         alt="Ruce skláře nad kahanem foukají skleněnou oční protézu"
         className="absolute inset-0 size-full object-cover"
         fetchPriority="high"
