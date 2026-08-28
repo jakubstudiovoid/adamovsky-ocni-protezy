@@ -32,7 +32,7 @@ export function ContactPreview() {
               </a>
             </li>
           </ul>
-          <Button asChild size="lg" variant="outline" className="mt-8">
+          <Button asChild size="lg" variant="iris" className="mt-8">
             <a href={site.mapLink} target="_blank" rel="noreferrer">
               Navigovat
             </a>
