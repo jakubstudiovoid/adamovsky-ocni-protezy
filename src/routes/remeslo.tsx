@@ -17,6 +17,12 @@ export const Route = createFileRoute("/remeslo")({
 
 const press = [
   {
+    source: "Český rozhlas Liberec",
+    year: "2026",
+    title: "Sklo, které pomáhá",
+    href: "https://www.mujrozhlas.cz/host-dopoledne-pod-jestedem/tema-sklo-ktere-pomaha",
+  },
+  {
     source: "iDNES.cz",
     year: "2025",
     title: "Sklář Petr Adamovský z Jablonce: Jak se vyrábějí oční protézy",
