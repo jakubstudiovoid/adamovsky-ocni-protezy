@@ -70,8 +70,8 @@ function RemesloPage() {
 
       <Reveal className="mx-auto max-w-6xl px-5 sm:px-8">
         <img
-          src="/images/hero-atelier.webp"
-          alt="Sklář fouká sklo nad kahanem v temné dílně"
+          src="/images/remeslo.jpg"
+          alt="Petr Adamovský nad kahanem tvaruje skleněnou oční protézu"
           className="aspect-[16/8] w-full rounded-xl object-cover"
         />
       </Reveal>
