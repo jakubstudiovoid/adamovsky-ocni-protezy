@@ -9,7 +9,7 @@ export const Route = createFileRoute("/epoukaz")({
     pageHead({
       title: "ePoukaz a pojišťovny",
       description:
-        "Od ledna 2026 platí na skleněnou oční protézu pouze ePoukaz. Kód 4000140, příspěvek 780 Kč, dva kusy ročně, bez revizního lékaře.",
+        "Od ledna 2026 platí na skleněnou oční protézu pouze ePoukaz. Kód 4000140, příspěvek 780 Kč, dva kusy ročně.",
       path: "/epoukaz",
     }),
   component: EpoukazPage,
@@ -31,12 +31,11 @@ function EpoukazPage() {
         </p>
       </header>
 
-      <div className="mx-auto grid max-w-6xl gap-6 px-5 sm:px-8 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mx-auto grid max-w-6xl gap-6 px-5 sm:grid-cols-3 sm:px-8">
         {[
           ["Kód výrobku", site.productCode, "Platí od 1. 4. 2019"],
           ["Příspěvek", site.insuranceContribution, "Na 1 ks, všechny pojišťovny"],
           ["Nárok", "2 ks / rok", "Počet kusů předepíše lékař"],
-          ["Revize", "Není nutná", "U skleněné protézy odpadá"],
         ].map(([k, v, n]) => (
           <Reveal key={k} className="rounded-xl border border-line bg-surface p-6">
             <p className="text-xs tracking-[0.16em] text-muted uppercase">{k}</p>
