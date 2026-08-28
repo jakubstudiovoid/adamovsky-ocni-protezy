@@ -28,12 +28,11 @@ export function Gallery() {
         <Reveal>
           <p className="text-xs tracking-[0.22em] text-iris uppercase">Originál</p>
           <h2 className="mt-4 max-w-xl text-3xl text-display sm:text-5xl">
-            Každý kus je jediný.
+            Každý kus je jedinečný.
           </h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted">
             Duhovka se nestříká ani netiskne. Skládá se z barevných skleněných
-            nití, podle oka, které zbývá. V Česku potřebuje protézu zhruba dva
-            tisíce lidí.
+            nití, podle oka, které zbývá.
           </p>
         </Reveal>
 
