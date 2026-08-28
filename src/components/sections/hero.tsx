@@ -44,8 +44,7 @@ export function Hero() {
           transition={{ duration: 0.7, ease, delay: 0.38 }}
         >
           Petr Adamovský vyrábí skleněné oční protézy ručně, nad kahanem, na
-          počkání. Jedno z posledních míst v Česku, kde se toto řemeslo ještě
-          drží.
+          počkání.
         </motion.p>
         <motion.div
           className="mt-10 flex flex-wrap gap-3"
