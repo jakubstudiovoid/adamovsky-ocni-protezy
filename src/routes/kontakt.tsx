@@ -113,9 +113,9 @@ function KontaktPage() {
             </div>
             <div>
               <dt className="text-xs tracking-[0.16em] text-muted uppercase">
-                Objednávky
+                {site.hours.workshopLabel}
               </dt>
-              <dd className="mt-2 text-base text-muted">{site.hours.detail}</dd>
+              <dd className="mt-2 text-base text-muted">{site.hours.workshop}</dd>
             </div>
           </dl>
         </Reveal>
