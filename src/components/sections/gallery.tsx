@@ -36,9 +36,12 @@ export function Gallery() {
           </p>
         </Reveal>
 
-        <RevealGroup className="mt-12 grid gap-6 sm:grid-cols-3" stagger={0.1}>
+        <RevealGroup
+          className="mx-auto mt-12 grid max-w-sm justify-items-center gap-8 sm:max-w-3xl sm:grid-cols-3 sm:justify-items-stretch sm:gap-6"
+          stagger={0.1}
+        >
           {pieces.map((item) => (
-            <RevealItem key={item.src}>
+            <RevealItem key={item.src} className="w-full max-w-[13.5rem] sm:max-w-none">
               <figure>
                 <img
                   src={item.src}
@@ -46,7 +49,7 @@ export function Gallery() {
                   className="aspect-square w-full rounded-xl object-cover"
                   loading="lazy"
                 />
-                <figcaption className="mt-4">
+                <figcaption className="mt-3">
                   <p className="text-sm font-medium tracking-tight">{item.caption}</p>
                   <p className="mt-1 text-sm text-muted">{item.note}</p>
                 </figcaption>
