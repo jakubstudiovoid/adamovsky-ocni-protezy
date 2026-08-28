@@ -99,7 +99,6 @@ function KontaktPage() {
                 <a href={`tel:${site.phone}`} className="hover:text-iris">
                   {site.phoneDisplay}
                 </a>
-                <p className="mt-2 text-muted">{site.hours.note}</p>
               </dd>
             </div>
             <div>
@@ -110,6 +109,7 @@ function KontaktPage() {
                 <a href={`mailto:${site.email}`} className="hover:text-iris">
                   {site.email}
                 </a>
+                <p className="mt-2 text-muted">{site.hours.note}</p>
               </dd>
             </div>
             <div>
