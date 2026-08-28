@@ -8,8 +8,8 @@ export function About() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-12 lg:py-28">
         <Reveal className="lg:col-span-6">
           <img
-            src="/images/workbench.jpg"
-            alt="Pracovní stůl s trubičkami skla, pinzetou a hotovými očními protézami"
+            src="/images/petr-adamovsky.jpg"
+            alt="Petr Adamovský, mistr výroby skleněných očních protéz"
             className="aspect-[4/3] w-full rounded-xl object-cover"
             loading="lazy"
           />
