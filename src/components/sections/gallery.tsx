@@ -37,28 +37,32 @@ export function Gallery() {
         </Reveal>
 
         <RevealGroup
-          className="mx-auto mt-12 grid max-w-sm justify-items-center gap-8 sm:max-w-3xl sm:grid-cols-3 sm:justify-items-stretch sm:gap-6"
+          className="mx-auto mt-16 grid max-w-4xl grid-cols-3 items-start gap-4 sm:gap-10"
           stagger={0.1}
         >
           {pieces.map((item) => (
-            <RevealItem key={item.src} className="w-full max-w-[13.5rem] sm:max-w-none">
-              <figure>
-                <img
-                  src={item.src}
-                  alt={item.alt}
-                  className="aspect-square w-full rounded-xl object-cover"
-                  loading="lazy"
-                />
-                <figcaption className="mt-3">
-                  <p className="text-sm font-medium tracking-tight">{item.caption}</p>
-                  <p className="mt-1 text-sm text-muted">{item.note}</p>
+            <RevealItem key={item.src}>
+              <figure className="flex flex-col items-center text-center">
+                <div className="aspect-square w-full overflow-hidden rounded-full">
+                  <img
+                    src={item.src}
+                    alt={item.alt}
+                    className="size-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption className="mt-4 sm:mt-5">
+                  <p className="text-xs tracking-[0.22em] uppercase">{item.caption}</p>
+                  <p className="mt-2 hidden text-sm leading-relaxed text-muted sm:block">
+                    {item.note}
+                  </p>
                 </figcaption>
               </figure>
             </RevealItem>
           ))}
         </RevealGroup>
 
-        <Reveal className="mt-10 overflow-hidden rounded-xl" delay={0.12}>
+        <Reveal className="mt-16 overflow-hidden rounded-xl" delay={0.12}>
           <img
             src="/images/collection.jpg?v=20260828"
             alt="Řada ručně foukaných skleněných očních protéz na černém sametu"
