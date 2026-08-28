@@ -3,6 +3,7 @@ import { CookieNotice } from "@/components/cookie-notice";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { JsonLd } from "@/components/json-ld";
+import { ProtectImages } from "@/components/protect-images";
 
 export function SiteShell({ children }: { children: ReactNode }) {
   return (
@@ -18,6 +19,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <Footer />
       <CookieNotice />
       <JsonLd />
+      <ProtectImages />
     </div>
   );
 }
