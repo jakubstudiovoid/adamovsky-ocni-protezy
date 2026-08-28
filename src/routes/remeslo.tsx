@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 import { pageHead } from "@/lib/seo";
@@ -13,6 +14,33 @@ export const Route = createFileRoute("/remeslo")({
     }),
   component: RemesloPage,
 });
+
+const press = [
+  {
+    source: "iDNES.cz",
+    year: "2025",
+    title: "Sklář Petr Adamovský z Jablonce: Jak se vyrábějí oční protézy",
+    href: "https://www.idnes.cz/liberec/zpravy/ocni-protezy-sklenene-oko-petr-adamovsky-sklar-protetik-rozhovor.A250821_866941_liberec-zpravy_lav",
+  },
+  {
+    source: "Český rozhlas Liberec",
+    year: "2023",
+    title: "Ve městě skla a bižuterie vznikají i skleněné oční protézy",
+    href: "https://liberec.rozhlas.cz/ve-meste-skla-a-bizuterie-vznikaji-i-sklenene-ocni-protezy-9026418",
+  },
+  {
+    source: "Město Jablonec nad Nisou",
+    year: "",
+    title: "Petr Adamovský — sklář, který lidem navrací smysl života",
+    href: "https://www.mestojablonec.cz/petr-adamovsky-sklar-ktery-lidem-navraci-smysl-zivota-1440",
+  },
+  {
+    source: "iDNES.cz",
+    year: "2016",
+    title: "Vyrobit skleněné oko zabere hodinu a půl. Každý kus je originál",
+    href: "https://www.idnes.cz/ekonomika/domaci/video-odhalte-tajemstvi-sklenenych-oci.A160624_105508_ekonomika_kris",
+  },
+];
 
 function RemesloPage() {
   return (
@@ -98,6 +126,36 @@ function RemesloPage() {
             k nerozeznání.
           </p>
         </Reveal>
+
+        <Reveal>
+          <p className="mt-16 text-xs tracking-[0.22em] text-iris uppercase">
+            Napsali o nás
+          </p>
+          <ul className="mt-8 divide-y divide-line border-y border-line">
+            {press.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-baseline justify-between gap-6 py-5"
+                >
+                  <span>
+                    <span className="block text-xs tracking-[0.16em] text-muted uppercase">
+                      {item.source}
+                      {item.year ? ` · ${item.year}` : ""}
+                    </span>
+                    <span className="mt-2 block tracking-tight transition-colors group-hover:text-iris">
+                      {item.title}
+                    </span>
+                  </span>
+                  <ArrowUpRight className="size-4 shrink-0 text-muted transition-colors group-hover:text-iris" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+
         <Reveal>
           <Button asChild variant="iris" className="mt-4">
             <Link to="/navsteva">Objednat návštěvu</Link>
