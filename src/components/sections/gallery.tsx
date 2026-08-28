@@ -1,20 +1,24 @@
 import { Reveal, RevealGroup, RevealItem } from "@/components/reveal";
+import { collectionPhoto } from "@/lib/gallery/collectionPhoto";
+import { irisBlue } from "@/lib/gallery/irisBlue";
+import { irisBrown } from "@/lib/gallery/irisBrown";
+import { irisGreen } from "@/lib/gallery/irisGreen";
 
 const pieces = [
   {
-    src: "/images/iris-blue.jpg",
-    alt: "Makro duhovky skleněné oční protézy v ocelově modré",
+    src: irisBlue,
+    alt: "Makro duhovky skleněné oční protézy ve světle modré",
     caption: "Světlemodrá",
     note: "Nejtěžší kresba — každá chyba je vidět.",
   },
   {
-    src: "/images/iris-brown.jpg",
+    src: irisBrown,
     alt: "Makro duhovky skleněné oční protézy v tmavě hnědé",
     caption: "Tmavohnědá",
     note: "Nejpřirozenější. Nejčastější.",
   },
   {
-    src: "/images/iris-green.jpg",
+    src: irisGreen,
     alt: "Makro duhovky skleněné oční protézy v šedozelené",
     caption: "Šedozelená",
     note: "Jemná, přesná, nesnese kompromis.",
@@ -39,7 +43,7 @@ export function Gallery() {
 
         <RevealGroup className="mt-12 grid gap-6 sm:grid-cols-3" stagger={0.1}>
           {pieces.map((item) => (
-            <RevealItem key={item.src}>
+            <RevealItem key={item.caption}>
               <figure>
                 <img
                   src={item.src}
@@ -58,7 +62,7 @@ export function Gallery() {
 
         <Reveal className="mt-10 overflow-hidden rounded-xl" delay={0.12}>
           <img
-            src="/images/collection.jpg"
+            src={collectionPhoto}
             alt="Řada ručně foukaných skleněných očních protéz na černém sametu"
             className="aspect-[3/2] w-full object-cover"
             loading="lazy"
