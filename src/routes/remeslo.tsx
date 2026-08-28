@@ -40,6 +40,12 @@ const press = [
     title: "Vyrobit skleněné oko zabere hodinu a půl. Každý kus je originál",
     href: "https://www.idnes.cz/ekonomika/domaci/video-odhalte-tajemstvi-sklenenych-oci.A160624_105508_ekonomika_kris",
   },
+  {
+    source: "Český rozhlas Sever",
+    year: "2015",
+    title: "Oční protézy pomáhají lidem vrátit se do normálního života",
+    href: "https://sever.rozhlas.cz/ocni-protezy-pomahaji-lidem-vratit-se-do-normalniho-zivota-6829640",
+  },
 ];
 
 function RemesloPage() {
