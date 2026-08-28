@@ -7,12 +7,12 @@ export function VisitCta() {
   return (
     <section className="relative isolate overflow-hidden bg-bg text-fg">
       <img
-        src="/images/jablonec.jpg"
-        alt="Jablonec nad Nisou, sklářské město v Jizerských horách"
-        className="absolute inset-0 size-full object-cover opacity-35"
+        src="/images/dilna.jpg?v=20260828"
+        alt="Dílna Petra Adamovského v Jablonci nad Nisou"
+        className="absolute inset-0 size-full object-cover opacity-50 brightness-[1.12]"
         loading="lazy"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/80 to-bg/40" />
+      <div className="absolute inset-0 bg-gradient-to-r from-bg via-bg/70 to-bg/25" />
       <div className="relative mx-auto max-w-6xl px-5 py-24 sm:px-8 lg:py-32">
         <Reveal>
           <p className="text-xs tracking-[0.22em] text-iris uppercase">Návštěva</p>
