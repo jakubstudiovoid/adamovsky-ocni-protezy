@@ -115,9 +115,7 @@ function KontaktPage() {
               <dt className="text-xs tracking-[0.16em] text-muted uppercase">
                 Objednávky
               </dt>
-              <dd className="mt-2 text-base text-muted">
-                {site.hours.days} od {site.hours.opens}
-              </dd>
+              <dd className="mt-2 text-base text-muted">{site.hours.detail}</dd>
             </div>
           </dl>
         </Reveal>
@@ -189,9 +187,7 @@ function KontaktPage() {
                   <Textarea
                     id="c-message"
                     value={form.message}
-                    onChange={(e) =>
-                      setForm({ ...form, message: e.target.value })
-                    }
+                    onChange={(e) => setForm({ ...form, message: e.target.value })}
                     required
                   />
                   {errors.message ? (
