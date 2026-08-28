@@ -111,6 +111,45 @@
   }
 }
 
+.iris-disc {
+  position: relative;
+  overflow: hidden;
+  border-radius: 999px;
+  clip-path: circle(50%);
+}
+
+.iris-disc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.08);
+  transform-origin: center;
+  transition: transform 3.5s ease-in-out;
+}
+
+.iris-disc:hover img {
+  transform: scale(1.16);
+}
+
+.iris-disc::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0;
+  background: radial-gradient(
+    circle at 32% 28%,
+    rgba(244, 243, 239, 0.16),
+    transparent 46%
+  );
+  transition: opacity 3.5s ease-in-out;
+}
+
+.iris-disc:hover::after {
+  opacity: 1;
+}
+
 .rdp-adamovsky {
   --rdp-accent-color: var(--color-iris);
   --rdp-accent-background-color: color-mix(in oklab, var(--color-iris) 22%, transparent);
@@ -161,12 +200,16 @@
     scroll-behavior: auto;
   }
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+  .iris-disc img,
+  .iris-disc::after {
+    transition: none;
+  }
+
+  .iris-disc:hover img {
+    transform: scale(1.08);
+  }
+
+  .iris-disc:hover::after {
+    opacity: 0;
   }
 }
