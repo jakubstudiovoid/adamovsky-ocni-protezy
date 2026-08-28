@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/reveal";
+import { Button } from "@/components/ui/button";
 import { site } from "@/lib/site";
 
 export function ContactPreview() {
@@ -30,17 +31,12 @@ export function ContactPreview() {
                 {site.email}
               </a>
             </li>
-            <li>
-              <a
-                href={site.mapLink}
-                className="text-fg hover:text-iris"
-                target="_blank"
-                rel="noreferrer"
-              >
-                navigovat
-              </a>
-            </li>
           </ul>
+          <Button asChild size="lg" variant="outline" className="mt-8">
+            <a href={site.mapLink} target="_blank" rel="noreferrer">
+              Navigovat
+            </a>
+          </Button>
         </Reveal>
         <Reveal className="overflow-hidden rounded-xl lg:col-span-8" delay={0.1}>
           <iframe
