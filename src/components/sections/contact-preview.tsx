@@ -37,7 +37,7 @@ export function ContactPreview() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Navigovat
+                navigovat
               </a>
             </li>
           </ul>
