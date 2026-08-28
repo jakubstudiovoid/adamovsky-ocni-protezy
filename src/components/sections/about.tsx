@@ -44,9 +44,7 @@ export function About() {
                 <Link to="/remeslo">Celý příběh</Link>
               </Button>
               <Button asChild variant="ink-outline">
-                <Link to="/remeslo" hash="napsali">
-                  Napsali o nás
-                </Link>
+                <a href="/remeslo#napsali">Napsali o nás</a>
               </Button>
             </div>
           </Reveal>
