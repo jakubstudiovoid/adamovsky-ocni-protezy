@@ -31,7 +31,7 @@ function EpoukazPage() {
         </p>
       </header>
 
-      <div className="mx-auto grid max-w-6xl gap-6 px-5 sm:grid-cols-3 sm:px-8">
+      <div className="mx-auto grid max-w-3xl gap-6 px-5 sm:grid-cols-3 sm:px-8">
         {[
           ["Kód výrobku", site.productCode, "Platí od 1. 4. 2019"],
           ["Příspěvek", site.insuranceContribution, "Na 1 ks, všechny pojišťovny"],
