@@ -119,8 +119,7 @@ export function ReservationForm() {
         <h3 className="mt-5 text-2xl text-display">Žádost je odeslána.</h3>
         <p className="mt-3 text-sm leading-relaxed text-muted">
           Petr si termín potvrdí telefonicky nebo SMS, obvykle do 24 hodin v
-          pracovní dny. Dílna je jednomužná — rezervace je poptávka, ne
-          automatický zámek času.
+          pracovní dny.
         </p>
         <dl className="mt-8 grid gap-4 border-t border-line pt-6 text-sm sm:grid-cols-2">
           <div>
