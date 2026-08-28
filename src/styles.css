@@ -150,6 +150,14 @@
   opacity: 1;
 }
 
+.studio-map {
+  background: #000;
+}
+
+.studio-map-frame {
+  filter: grayscale(1) invert(1) contrast(1.05) brightness(0.72);
+}
+
 .rdp-adamovsky {
   --rdp-accent-color: var(--color-iris);
   --rdp-accent-background-color: color-mix(in oklab, var(--color-iris) 22%, transparent);
