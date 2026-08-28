@@ -15,8 +15,8 @@ export function Process() {
         <div className="mt-14 grid gap-10 lg:grid-cols-12 lg:items-start">
           <Reveal className="overflow-hidden rounded-xl lg:col-span-5" delay={0.08}>
             <img
-              src="/images/craft-threads.jpg"
-              alt="Barevné skleněné nitě se kladou na bílou skleněnou bulvu nad plamenem"
+              src="/images/craft.jpg?v=20260828"
+              alt="Skleněná oční protéza se tvaruje nad plamenem kahanu"
               className="aspect-[4/5] w-full object-cover"
               loading="lazy"
             />
