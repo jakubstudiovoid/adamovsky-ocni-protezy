@@ -20,9 +20,9 @@ export function VisitCta() {
             Objednejte se. Ozveme se.
           </h2>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-fg/75">
-            Příjem objednávek {site.hours.detail}. Dílna je jednomužná — když
-            se nedovoláte, napište SMS. Můžete si také vybrat termín v kalendáři
-            a nechat si ho potvrdit.
+            Příjem objednávek {site.hours.detail}. Když se nedovoláte, napište
+            SMS. Můžete si také vybrat termín v kalendáři a nechat si ho
+            potvrdit.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild size="lg" variant="iris">
