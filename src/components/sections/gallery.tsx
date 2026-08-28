@@ -32,7 +32,7 @@ export function Gallery() {
           </h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted">
             Duhovka se nestříká ani netiskne. Skládá se z barevných skleněných
-            nití, podle oka, které zbývá.
+            nití, podle oka, které zbývá. Tvar protézy je na míru podle očního důlku.
           </p>
         </Reveal>
 
