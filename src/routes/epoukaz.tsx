@@ -23,7 +23,7 @@ function EpoukazPage() {
           Od ledna 2026
         </p>
         <h1 className="mt-4 text-4xl text-display sm:text-6xl">
-          ePoukaz. Nic jiného.
+          ePoukaz
         </h1>
         <p className="mt-6 text-lg leading-relaxed text-muted">
           Poukaz na výrobu očních protéz se vystavuje pouze jako ePoukaz. Papír

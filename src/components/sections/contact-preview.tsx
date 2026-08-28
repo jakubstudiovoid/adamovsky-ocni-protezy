@@ -26,13 +26,13 @@ export function ContactPreview() {
                 {site.phoneDisplay}
               </a>
             </li>
+            <li className="text-muted">{site.hours.note}</li>
             <li>
               <a href={`mailto:${site.email}`} className="text-fg hover:text-iris">
                 {site.email}
               </a>
             </li>
           </ul>
-          <p className="mt-3 text-sm text-muted">{site.hours.note}</p>
           <Button asChild size="lg" variant="iris" className="mt-8">
             <a href={site.mapLink} target="_blank" rel="noreferrer">
               Navigovat

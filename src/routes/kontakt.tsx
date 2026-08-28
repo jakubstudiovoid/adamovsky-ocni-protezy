@@ -69,7 +69,7 @@ function KontaktPage() {
         <p className="text-xs tracking-[0.22em] text-iris uppercase">Kontakt</p>
         <h1 className="mt-4 text-4xl text-display sm:text-6xl">Dílna v Jablonci.</h1>
         <p className="mt-6 text-lg leading-relaxed text-muted">
-          Od března 2021 ve Svatopluka Čecha. Když se nedovoláte, napište SMS —
+          Od března 2021 sídlí dílna v ulici Svatopluka Čecha. Když se nedovoláte, napište SMS —
           právě se fouká protéza.
         </p>
       </header>
@@ -99,6 +99,7 @@ function KontaktPage() {
                 <a href={`tel:${site.phone}`} className="hover:text-iris">
                   {site.phoneDisplay}
                 </a>
+                <p className="mt-2 text-muted">{site.hours.note}</p>
               </dd>
             </div>
             <div>
@@ -109,7 +110,6 @@ function KontaktPage() {
                 <a href={`mailto:${site.email}`} className="hover:text-iris">
                   {site.email}
                 </a>
-                <p className="mt-2 text-muted">{site.hours.note}</p>
               </dd>
             </div>
             <div>
@@ -119,6 +119,11 @@ function KontaktPage() {
               <dd className="mt-2 text-base text-muted">{site.hours.workshop}</dd>
             </div>
           </dl>
+          <Button asChild size="lg" variant="iris" className="mt-8">
+            <a href={site.mapLink} target="_blank" rel="noreferrer">
+              Navigovat
+            </a>
+          </Button>
         </Reveal>
 
         <Reveal className="lg:col-span-7" delay={0.08}>
@@ -206,16 +211,6 @@ function KontaktPage() {
 
       <div className="mx-auto max-w-6xl px-5 pb-20 sm:px-8">
         <StudioMap title="Mapa dílny Petra Adamovského" />
-        <p className="mt-4 text-sm">
-          <a
-            href={site.mapLink}
-            className="text-muted hover:text-iris"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Otevřít navigaci
-          </a>
-        </p>
       </div>
     </article>
   );
