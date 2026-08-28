@@ -24,28 +24,8 @@ export function IrisMark({
         strokeWidth="1.05"
       />
       <circle cx="16" cy="16" r="12.15" fill="currentColor" className="text-iris" />
-      <g
-        fill="none"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeWidth="0.85"
-        opacity="0.45"
-      >
-        <line x1="16" y1="10.8" x2="16" y2="4.85" />
-        <line x1="18.6" y1="11.5" x2="21.57" y2="6.34" />
-        <line x1="20.5" y1="13.4" x2="25.66" y2="10.43" />
-        <line x1="21.2" y1="16" x2="27.15" y2="16" />
-        <line x1="20.5" y1="18.6" x2="25.66" y2="21.57" />
-        <line x1="18.6" y1="20.5" x2="21.57" y2="25.66" />
-        <line x1="16" y1="21.2" x2="16" y2="27.15" />
-        <line x1="13.4" y1="20.5" x2="10.42" y2="25.66" />
-        <line x1="11.5" y1="18.6" x2="6.34" y2="21.58" />
-        <line x1="10.8" y1="16" x2="4.85" y2="16" />
-        <line x1="11.5" y1="13.4" x2="6.34" y2="10.42" />
-        <line x1="13.4" y1="11.5" x2="10.42" y2="6.34" />
-      </g>
-      <circle cx="16" cy="16" r="4.2" fill="#000000" />
-      <circle cx="18.05" cy="14.25" r="1.25" fill="#F4F3EF" />
+      <circle cx="16" cy="16" r="5.35" fill="#000000" />
+      <circle cx="18.2" cy="14.1" r="1.35" fill="#F4F3EF" />
     </svg>
   );
 }
