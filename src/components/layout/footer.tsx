@@ -89,8 +89,20 @@ export function Footer() {
       </div>
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between sm:px-8">
-          <p>© {new Date().getFullYear()} {site.name}. Všechna práva vyhrazena.</p>
-          <p>Jablonec nad Nisou</p>
+          <p>
+            © {new Date().getFullYear()} {site.name}
+          </p>
+          <p>
+            vytvořilo{" "}
+            <a
+              href="https://studiovoid.cz"
+              target="_blank"
+              rel="noreferrer"
+              className="text-fg no-underline hover:text-iris"
+            >
+              studiovoid.cz
+            </a>
+          </p>
         </div>
       </div>
     </footer>
