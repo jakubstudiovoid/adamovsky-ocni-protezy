@@ -66,6 +66,25 @@ export function Gallery() {
             loading="lazy"
           />
         </Reveal>
+
+        <RevealGroup className="mt-6 grid gap-6 sm:grid-cols-2" stagger={0.1}>
+          <RevealItem>
+            <img
+              src="/images/collection-1.jpg?v=20260828"
+              alt="Detail skleněných očních protéz uložených v dřevěné krabičce"
+              className="aspect-[3/2] w-full rounded-xl object-cover"
+              loading="lazy"
+            />
+          </RevealItem>
+          <RevealItem>
+            <img
+              src="/images/collection-2.jpg?v=20260828"
+              alt="Ručně foukané skleněné oční protézy na béžové látce"
+              className="aspect-[3/2] w-full rounded-xl object-cover"
+              loading="lazy"
+            />
+          </RevealItem>
+        </RevealGroup>
       </div>
     </section>
   );
