@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #0b0b0c;
+  --color-surface: #121214;
+  --color-paper: #f3f1ec;
+  --color-fg: #f4f3ef;
+  --color-ink: #141413;
+  --color-muted: #8c8c86;
+  --color-muted-ink: #5c5c56;
+  --color-iris: #3d6bff;
+  --color-iris-deep: #2a4fd6;
+  --color-line: #ffffff1f;
+  --color-line-ink: #1414131f;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.75rem;
+
+  --shadow-border: 0 0 0 1px #ffffff14;
+  --shadow-border-hover: 0 0 0 1px #ffffff21;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01" 1, "kern" 1;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--color-iris);
+    color: var(--color-fg);
+  }
+
+  img {
+    outline: 1px solid rgb(255 255 255 / 0.1);
+    outline-offset: -1px;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-iris);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .text-display {
+    letter-spacing: -0.04em;
+    line-height: 0.92;
+    font-weight: 500;
+  }
+}
+
+.rdp-adamovsky {
+  --rdp-accent-color: var(--color-iris);
+  --rdp-accent-background-color: color-mix(in oklab, var(--color-iris) 22%, transparent);
+  --rdp-today-color: var(--color-iris);
+  --rdp-day-height: 2.75rem;
+  --rdp-day-width: 2.75rem;
+  --rdp-day_button-border-radius: 0.5rem;
+  --rdp-background-color: transparent;
+  --rdp-nav-height: 2.75rem;
+  --rdp-day_button-height: 2.75rem;
+  --rdp-day_button-width: 2.75rem;
+  color: var(--color-fg);
+  font-family: inherit;
+}
+
+.rdp-adamovsky .rdp-months {
+  max-width: 100%;
+}
+
+.rdp-adamovsky .rdp-day_button {
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.rdp-adamovsky .rdp-day_button:hover:not([disabled]):not(.rdp-selected) {
+  background: rgb(255 255 255 / 0.06);
+}
+
+.rdp-adamovsky .rdp-weekday {
+  color: var(--color-muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.rdp-adamovsky .rdp-caption_label,
+.rdp-adamovsky .rdp-month_caption {
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.rdp-adamovsky .rdp-disabled {
+  opacity: 0.28;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
