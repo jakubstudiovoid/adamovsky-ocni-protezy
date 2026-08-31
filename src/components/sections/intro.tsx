@@ -27,7 +27,7 @@ export function Intro() {
               Řemeslo sem přinesli skláři z německé Lauschy, kde v roce 1835
               vzniklo první skleněné oko. Do Jablonce se dostalo po válce.
               Petr Adamovský se ho učil od roku 1987 u Břetislava Pivrnce a od
-              roku 1992 vede dílnu sám.
+              roku 2000 vede dílnu sám.
             </p>
           </Reveal>
         </div>
