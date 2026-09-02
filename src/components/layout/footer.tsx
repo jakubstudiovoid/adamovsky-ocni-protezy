@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { IrisMark } from "@/components/iris-mark";
 import { site } from "@/lib/site";
 
 export function Footer() {
@@ -7,12 +6,12 @@ export function Footer() {
     <footer className="border-t border-line bg-bg text-fg">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 lg:grid-cols-12 lg:py-20">
         <div className="lg:col-span-5">
-          <div className="flex items-center gap-2.5">
-            <IrisMark className="size-7 text-fg" title={site.name} />
-            <span className="flex flex-col leading-none">
-              <span className="text-sm font-medium tracking-tight">{site.shortName}</span>
-              <span className="mt-0.5 text-[11px] text-muted">{site.person}</span>
-            </span>
+          <div className="flex items-center">
+            <img
+              src="/images/logo.png"
+              alt={site.name}
+              className="h-8 w-auto"
+            />
           </div>
           <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted">
             Výroba skleněných očních protéz. Ručně, nad kahanem, v Jablonci nad

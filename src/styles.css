@@ -8,7 +8,7 @@
   --color-paper: #f3f1ec;
   --color-fg: #f4f3ef;
   --color-ink: #141413;
-  --color-muted: #8c8c86;
+  --color-muted: #9c9c96;
   --color-muted-ink: #5c5c56;
   --color-iris: #3d6bff;
   --color-iris-deep: #2a4fd6;
@@ -185,12 +185,12 @@
 
 .studio-map .leaflet-control-attribution {
   background: transparent;
-  color: #8c8c86;
+  color: #9c9c96;
   font-size: 10px;
 }
 
 .studio-map .leaflet-control-attribution a {
-  color: #8c8c86;
+  color: #9c9c96;
 }
 
 .rdp-adamovsky {

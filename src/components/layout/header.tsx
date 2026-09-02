@@ -1,7 +1,6 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { IrisMark } from "@/components/iris-mark";
 import { Button } from "@/components/ui/button";
 import { nav, site } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -41,18 +40,14 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8">
         <Link
           to="/"
-          className="flex items-center gap-2.5 text-fg no-underline"
+          className="flex items-center text-fg no-underline"
           aria-label={`${site.name} — úvod`}
         >
-          <IrisMark className="size-7 text-fg" title={site.name} />
-          <span className="flex flex-col leading-none">
-            <span className="text-sm font-medium tracking-tight">
-              {site.shortName}
-            </span>
-            <span className="mt-0.5 text-[11px] tracking-tight text-muted">
-              {site.person}
-            </span>
-          </span>
+          <img
+            src="/images/logo.png"
+            alt={site.name}
+            className="h-8 w-auto sm:h-9"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Hlavní">
@@ -61,7 +56,7 @@ export function Header() {
               key={item.href}
               to={item.href}
               className={cn(
-                "text-sm tracking-tight text-muted no-underline transition-colors duration-150 hover:text-fg",
+                "text-sm tracking-tight text-fg no-underline transition-colors duration-150 hover:text-fg/70",
                 pathname === item.href && "text-fg",
               )}
             >
