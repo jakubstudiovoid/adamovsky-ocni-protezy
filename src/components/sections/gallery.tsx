@@ -26,7 +26,7 @@ export function Gallery() {
     <section className="bg-bg text-fg">
       <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8 lg:py-28">
         <Reveal>
-          <p className="text-xs tracking-[0.22em] text-iris uppercase">Originál</p>
+          <p className="text-xs tracking-[0.22em] text-iris uppercase">Oční protézy</p>
           <h2 className="mt-4 max-w-xl text-3xl text-display sm:text-5xl">
             Každý kus je jedinečný.
           </h2>
